@@ -2,6 +2,8 @@
 
 <ul>
 <li><strong>[Sep 2022]</strong> M.Sc. graduation </li>
+</ul>
+
 
 <!-- 
 <li><strong>[Apr. 2023]</strong> I will give a talk on continual learning at <a href="https://calendars.illinois.edu/detail/2568?eventId=33456212">UIUC External Speaker Series</a>.</li>
@@ -29,4 +31,3 @@
   <li><strong>[Mar. 2019]</strong> Our paper about <a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Meta-Transfer_Learning_for_Few-Shot_Learning_CVPR_2019_paper.pdf">few-shot learning</a> is accepted to <a href="http://cvpr2019.thecvf.com/">CVPR 2019</a>.</li>
 </div> -->
 
-</ul>
