@@ -6,13 +6,35 @@
   
 
 
-
-
-  
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    <img src="https://marcoschouten.github.io/teaser/teaser_extended_overview.png" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
+    <img src="../assets/teaser/teaser_msp.png" class="teaser img-fluid z-depth-1">
+            <abbr class="badge">CILC</abbr>
+  </div>
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+      <div class="title"><a href="https://ceur-ws.org/Vol-3204/paper_33.pdf">An ASP-based Approach to Master Surgical Scheduling</a></div>
+      <div class="author"> Cademartori, L., Galatà, G., Monaco, C. L., Maratea, M., Mochi, M., & <strong>Schouten, M.</strong></div>
+      <div class="periodical"><em>37th Italian Conference on Computational Logic, CILC, 2022.</em>
+      </div>
+    <div class="links">
+      <a href="https://ceur-ws.org/Vol-3204/paper_33.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      <!-- <a href="https://github.com/yaoyao-liu/CL-DETR" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      <a href="https://lyy.mpi-inf.mpg.de/CL-DETR/" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
+      <a href="https://bib.yliu.me/CVPR23a.txt" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>  -->
+    </div>
+  </div>
+</div>
+</li>
+
+<br>
+
+
+
+<li>
+<div class="pub-row">
+  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+    <img src="../assets/teaser/teaser_extended_overview.png" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
             <abbr class="badge">AI*IA</abbr>
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -30,28 +52,8 @@
 </div>
 </li>
 
-<br>
 
-<li>
-<div class="pub-row">
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    <img src="https://marcoschouten.github.io/teaser/teaser_msp.png" class="teaser img-fluid z-depth-1">
-            <abbr class="badge">CVPR</abbr>
-  </div>
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="https://ceur-ws.org/Vol-3204/paper_33.pdf">Continual Detection Transformer for Incremental Object Detection</a></div>
-      <div class="author"> Cademartori, L., Galatà, G., Monaco, C. L., Maratea, M., Mochi, M., & <strong>Schouten, M.</strong></div>
-      <div class="periodical"><em>37th Italian Conference on Computational Logic, <strong>(CILC)</strong>, 2022.</em>
-      </div>
-    <div class="links">
-      <a href="https://ceur-ws.org/Vol-3204/paper_33.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
-      <!-- <a href="https://github.com/yaoyao-liu/CL-DETR" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
-      <a href="https://lyy.mpi-inf.mpg.de/CL-DETR/" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
-      <a href="https://bib.yliu.me/CVPR23a.txt" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>  -->
-    </div>
-  </div>
-</div>
-</li>
+
  
 
 </ol>
