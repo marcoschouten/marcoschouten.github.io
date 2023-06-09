@@ -23,7 +23,7 @@ github_link: https://github.com/marcoschouten/
 linkedin: https://www.linkedin.com/in/schoutenmarco/
 
 # Images 
-avatar: https://marcoschouten.github.io/assets/img/profile.png
+avatar: ./assets/img/profile.png
 # favicon: ./assets/img/favicon.png
 # favicon_dark: ./assets/img/favicon-dark.png
 

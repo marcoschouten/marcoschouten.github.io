@@ -2,11 +2,10 @@
 layout: homepage
 ---
 
-## About Me
+## Hi there!
 
 
-
-I'm currently doing research at Aptiv. Before joining RPL, I was a master's student at KTH Royal Institute of Technology majoring in Machine Learning.
+I'm currently doing research at Aptiv. Previously, I was a master's student at KTH Royal Institute of Technology majoring in Machine Learning.
 My research involves developing advanced ML methods for high-definition (HD) map generation in ADAS.
 
 <!--
@@ -16,8 +15,6 @@ My research involves developing advanced ML methods for high-definition (HD) map
 {% include_relative _includes/news.md %}
 
 {% include_relative _includes/publications.md %}
-
-<!-- {% include_relative _includes/services.md %} -->
 
 ## Contact
 **Address:** Dusseldorf, Germany
