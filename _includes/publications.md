@@ -39,7 +39,7 @@
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
       <div class="title"><a href="https://ceur-ws.org/Vol-2745/paper7.pdf">Answer Set Programming in Healthcare: Extended Overview</a></div>
-      <div class="author">Mario Alviano, Riccardo Bertolucci, Matteo Cardellini, Carmine Dodaro, Giuseppe Galatà, Muhammad Kamran Khan, Marco Maratea, Marco Mochi, Victoria Morozan, Ivan Porro, <strong>Marco Schouten</strong></div>
+      <div class="author">Alviano, M., Bertolucci, R., Cardellini, M., Dodaro, C., Galatà, G., Khan, M.K., Maratea, M., Mochi, M., Morozan, V., Porro, I. and <strong>Schouten, M.</strong></div>
       <div class="periodical"><em> IPS-RCRA@ AI* IA, 2020.</em>
       </div>
     <div class="links">
