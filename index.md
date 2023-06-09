@@ -17,5 +17,5 @@ My research involves developing advanced ML methods for high-definition (HD) map
 {% include_relative _includes/publications.md %}
 
 ## Contact
-**Address:** Dusseldorf, Germany
+**Address:** Düsseldorf, Germany
 <br>
