@@ -1,6 +1,7 @@
 ## News
 
 <ul>
+<li><strong>[Nov 2023]</strong> Started Ph.d. </li>
 <li><strong>[Sep 2022]</strong> M.Sc. graduation </li>
 </ul>
 
