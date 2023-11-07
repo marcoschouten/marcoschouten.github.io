@@ -6,10 +6,9 @@ layout: homepage
 
 
 
-I am currently a Ph.D. student in computer vision at <a href="https://www.dtu.dk/english/ ">DTU</a> and a Ph.D. fellow at the <a href="https://www.aicentre.dk/">Pioneer Centre of AI</a>
+I am currently a Ph.D. student in computer vision at <a href="https://www.dtu.dk/english/ ">DTU</a> and the <a href="https://www.aicentre.dk/">Pioneer Centre of AI</a>
 
-My previous role involved research at <a href="https://aptiv.com">Aptiv PLC</a>, where I worked on advanced machine learning methods for high-definition map generation in Advanced Driver Assistance Systems (ADAS). Before that, I pursued a master's degree in machine learning at  <a href="https://kth.se">KTH Royal Institute of Technology</a> and conducted research on pose estimation for autonomous underwater vehicles at <a href="https://smarc.se">SMaRC - Swedish Maritime Robotic Center</a>.
-
+In previous roles, I've worked on advanced machine learning for high-definition maps at <a href="https://aptiv.com">Aptiv PLC</a> and conducted research on underwater vehicle pose estimation at <a href="https://smarc.se">SMaRC</a> 
 
 
 <!--
