@@ -5,10 +5,9 @@ layout: homepage
 ## Hi there!
 
 
+I'm currently a PhD student in computer vision at <a href="https://www.dtu.dk/">DTU</a> and affiliated with the <a href="https://www.aicentre.dk/">Pioneer Centre for AI</a>, under the guidance of Prof. Dimitrios Papadopolus and Prof. Serge Belongie.
 
-I am currently a Ph.D. student in computer vision at <a href="https://www.dtu.dk/english/ ">DTU</a> and the <a href="https://www.aicentre.dk/">Pioneer Centre of AI</a>
-
-In previous roles, I've worked on advanced machine learning for high-definition maps at <a href="https://aptiv.com">Aptiv PLC</a> and conducted research on underwater vehicle pose estimation at <a href="https://smarc.se">SMaRC</a> 
+Before that, I conducted industry research on deep learning for high-definition (HD) maps in ADAS at <a href="https://aptiv.com">Aptiv PLC</a>.
 
 
 <!--
@@ -20,5 +19,5 @@ In previous roles, I've worked on advanced machine learning for high-definition 
 {% include_relative _includes/publications.md %}
 
 ## Contact
-**Address:** Düsseldorf, Germany
+**Address:** Kgs. Kyngby, Denmark
 <br>
