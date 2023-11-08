@@ -5,7 +5,7 @@ layout: homepage
 ## Hi there!
 
 
-I'm currently a PhD student in computer vision at <a href="https://www.dtu.dk/">DTU</a> and affiliated with the <a href="https://www.aicentre.dk/">Pioneer Centre for AI</a>, under the guidance of Prof. Dimitrios Papadopolus and Prof. Serge Belongie. 
+I'm currently a PhD student in computer vision at <a href="https://www.dtu.dk/">DTU</a> and affiliated with the <a href="https://www.aicentre.dk/">Pioneer Centre for AI</a>, under the guidance of Prof. Dimitrios Papadopolus and Director & Prof Serge Belongie. 
 
 <!--
 My research focuses on improving annotation techniques for visual data, aiming to enhance the learning process of visual recognition models.
