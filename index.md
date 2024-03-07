@@ -4,12 +4,13 @@ layout: homepage
 
 ## Welcome to my page!
 
-I'm a Ph.D. student in Computer Vision at DTU, working with the Pioneer Centre for AI under <a href="http://people.csail.mit.edu/dimpapa/">Prof. Dimitrios Papadopolus</a> and <a href="https://sergebelongie.github.io/" >Director & Prof Serge Belongie</a>.
-<!--
-My research focuses on improving annotation techniques for visual data, aiming to enhance the learning process of visual recognition models.
--->
+I am a Ph.D. student at DTU affiliated with the Pioneer Centre for AI advised by <a href="http://people.csail.mit.edu/dimpapa/">Prof. Dimitrios Papadopolus</a> and <a href="https://sergebelongie.github.io/" >Director & Prof Serge Belongie</a>.
 
-Previously, I researched deep learning for HD maps in ADAS at <a href="https://aptiv.com">Aptiv PLC</a>.
+I work on computer vision and deep learning problems, focusing on visual recognition models.
+
+Previously, I worked in deep learning for mapping technologies at <a href="https://aptiv.com">Aptiv PLC</a>.
+
+
 
 
 <!--
