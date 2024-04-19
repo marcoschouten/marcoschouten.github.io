@@ -2,14 +2,10 @@
 layout: homepage
 ---
 
-# Marco Schouten
 <p style="font-size:18px;">
 
 
 I am a PhD student at the Technical University of Denmark (DTU), working within the Pioneer Centre for Artificial Intelligence. I am fortunate to be advised by <a href="https://people.csail.mit.edu/dimpapa/">Prof. Dimitrios Papadopoulos</a> and <a href="https://sergebelongie.github.io/">Director & Prof. Serge Belongie</a>.
-
-
-
 
 <p style="font-size:18px;">
 
