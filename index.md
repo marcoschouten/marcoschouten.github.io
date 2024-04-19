@@ -1,11 +1,8 @@
 ---
 layout: homepage
 ---
-
-<p style="font-size:18px;">
-
 ## About 
-
+<p style="font-size:18px;">
 
 I am a PhD student at the <a href="https://www.dtu.dk/">Technical University of Denmark</a> working within the <a href="https://www.aicentre.dk/">Pioneer Centre for AI</a>. I am fortunate to be advised by <a href="https://people.csail.mit.edu/dimpapa/">Prof. Dimitrios Papadopoulos</a> and <a href="https://sergebelongie.github.io/">Director & Prof. Serge Belongie</a>.
 
