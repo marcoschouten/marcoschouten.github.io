@@ -4,12 +4,14 @@ layout: homepage
 
 <p style="font-size:18px;">
 
+## About 
 
-I am a PhD student at the Technical University of Denmark (DTU), working within the Pioneer Centre for Artificial Intelligence. I am fortunate to be advised by <a href="https://people.csail.mit.edu/dimpapa/">Prof. Dimitrios Papadopoulos</a> and <a href="https://sergebelongie.github.io/">Director & Prof. Serge Belongie</a>.
+
+I am a PhD student at the <a href="https://www.dtu.dk/">Technical University of Denmark</a> working within the <a href="https://www.aicentre.dk/">Pioneer Centre for AI</a>. I am fortunate to be advised by <a href="https://people.csail.mit.edu/dimpapa/">Prof. Dimitrios Papadopoulos</a> and <a href="https://sergebelongie.github.io/">Director & Prof. Serge Belongie</a>.
 
 <p style="font-size:18px;">
 
-My research focuses on deep learning in human-machine collaboration, with a particular emphasis on the multimodal integration of visual and language data.
+My research focuses on deep learning in **human-machine collaboration**, with a particular emphasis on the multimodal integration of visual and language data.
 
 </p>
 
