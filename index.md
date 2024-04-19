@@ -8,11 +8,6 @@ I am a Ph.D. student at DTU affiliated with the Pioneer Centre for AI advised by
 
 I work on deep learning problems, focusing on **multimodal (vision+language)** models.
 
-
-{% include_relative _includes/news.md %}
-
 {% include_relative _includes/publications.md %}
 
-## Contact
-**Address:** Kgs. Lyngby 2800, Denmark
-<br>
+
