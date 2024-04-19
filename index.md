@@ -12,8 +12,7 @@ I am a PhD student at the Technical University of Denmark (DTU), working within 
 
 <p style="font-size:18px;">
 
-My research focuses on deep learning in human-machine collaboration, with a particular emphasis on the multimodal integration of visual and language data, and fine-grained categorization..
-
+My research focuses on deep learning in human-machine collaboration, with a particular emphasis on the multimodal integration of visual and language data.
 
 </p>
 
