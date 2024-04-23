@@ -8,7 +8,7 @@ I am a PhD student at the <a href="https://www.dtu.dk/">Technical University of 
 
 <p style="font-size:18px;">
 
-My research focuses on deep learning in <b>human-machine collaboration</b>, with a particular emphasis on the multimodal integration of visual and language data.
+My research focuses on <b>deep learning in human-machine collaboration</b>, with a particular emphasis on the multimodal integration of visual and language data.
 
 </p>
 
