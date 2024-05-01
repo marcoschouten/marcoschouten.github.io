@@ -12,6 +12,11 @@ My research focuses on <b>deep learning in human-machine collaboration</b>, with
 
 </p>
 
+<p style="font-size:18px;">
+Feel free to reach out to me via email for discussions or collaborations.
+</p>
+
+
 {% include_relative _includes/publications.md %}
 
 
