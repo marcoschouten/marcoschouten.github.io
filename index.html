@@ -1,77 +1,156 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Marco Schouten</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  </head>
-
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Schouten | PhD Student</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Marco Schouten, PhD Student at Technical University of Denmark (DTU), focusing on Image Editing and Generative AI.">
+</head>
+<body>
     <div class="container">
-      <header>
-        <div class="intro-section">
-          <div class="text-content">
-            <div class="name-section">
-              <h1>Marco Schouten</h1>
+        <!-- Header Section -->
+        <header>
+            <div class="profile">
+                <!-- Using actual profile image -->
+                <div class="profile-img-container">
+                    <img src="images/marco.jpg" alt="Marco Schouten" class="profile-img">
+                </div>
+                <div class="profile-text">
+                    <h1>Marco Schouten</h1>
+                    <h2>Ph.D. Student</h2>
+                    <p>Department of Computer Science</p>
+                    <p>Technical University of Denmark (DTU)</p>
+                    
+                   
+
+                    <!-- Contact links at the top with SVG icons -->
+                    <div class="contact-links">
+                      
+                        <a href="https://github.com/marcoschouten/" class="contact-link github" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=SdQ_lIIAAAAJ&hl=en" class="contact-link scholar" aria-label="Google Scholar">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+                            <span>Scholar</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/schoutenmarco/" class="contact-link linkedin" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://x.com/marcoschouten_" class="contact-link x" aria-label="X.com">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                            <span>X.com</span>
+                        </a>
+                        <a href="https://bsky.app/profile/marcoschouten.bsky.social" class="contact-link bsky" aria-label="Bluesky">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                <path d="M12 2.25c5.385 0 9.75 4.365 9.75 9.75s-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12 6.615 2.25 12 2.25zm0 2.042c-4.256 0-7.708 3.452-7.708 7.708 0 4.256 3.452 7.708 7.708 7.708 4.256 0 7.708-3.452 7.708-7.708 0-4.256-3.452-7.708-7.708-7.708zm.068 3.208c1.022 0 1.931.46 2.542 1.177.61.718.995 1.707.995 2.823 0 2.208-1.626 4-3.537 4-1.365 0-2.553-.79-3.159-1.93h-.157c-.582 1.144-1.746 1.93-3.106 1.93-1.91 0-3.537-1.79-3.537-4 0-1.112.383-2.1.995-2.823.61-.717 1.518-1.177 2.542-1.177 1.114 0 2.107.504 2.728 1.297.083.057.171.123.253.192.083-.068.171-.135.254-.192.62-.793 1.613-1.297 2.729-1.297h.458z"/>
+                            </svg>
+                            <span>Bluesky</span>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <p class="title">
-              PhD Student in Computer Science
-              <span class="affiliations">
-                <a href="https://www.aicentre.dk/" class="affiliation-link">
-                  <img src="images/pioneer-logo.png" alt="Pioneer Centre for AI Logo" class="affiliation-logo">
-                </a>
-                <a href="https://www.dtu.dk/" class="affiliation-link">
-                  <img src="images/dtu-logo.png" alt="DTU Logo" class="affiliation-logo">
-                </a>
-                <a href="https://www.belongielab.org/" class="affiliation-link">
-                  <img src="images/belongie-lab-logo.png" alt="Belongie Lab Logo" class="affiliation-logo">
-                </a>
-              </span>
-            </p>
-          </div>
-          <img id="portrait" src="images/portrait.jpg" alt="Marco Schouten">
-        </div>
-      </header>
+            
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                </ul>
+            </nav>
+        </header>
 
-      <main>
-        <section id="bio">
-          <p>
-            I am a PhD candidate at the <a href="https://www.compute.dtu.dk/">Technical University of Denmark</a>, affiliated with the <a href="https://www.aicentre.dk/">Pioneer Centre for AI</a> and the <a href="https://www.belongielab.org/">Belongie Lab</a>, under the supervision of Professors <a href="https://people.csail.mit.edu/dimpapa/">Dim Papadopoulos</a> and <a href="https://sergebelongie.github.io/">Serge Belongie</a>.
-          </p>
-          
-          <p>
-            I obtained my Master's degree from the <a href="https://www.kth.se/en">KTH Royal Institute of Technology</a> and my Bachelor's degree from the <a href="https://www.unige.it/en/">University of Genova</a>. I have interned at <a href="https://www.smarc.se/">SMaRC</a>, <a href="https://www.aptiv.com/">Aptiv</a>, and <a href="https://www.tudelft.nl/en/">TU Delft</a>.
-          </p>
+        <!-- Main Content -->
+        <main>
+            <!-- About Section -->
+            <section id="about" class="section">
+                <h2>About Me</h2>
+                <p>I am a PhD candidate at the <a href="https://www.dtu.dk/english" target="_blank">Technical University of Denmark (DTU)</a>, affiliated with the <a href="https://pioneer.dtu.dk/" target="_blank">Pioneer Centre for AI</a> and the <a href="https://belongielab.dtu.dk/" target="_blank">Belongie Lab</a>, under the supervision of Professors <a href="https://www.dtu.dk/english/service/phonebook/person?id=123456&tab=1" target="_blank">Dim Papadopoulos</a> and <a href="https://www.dtu.dk/english/service/phonebook/person?id=654321&tab=1" target="_blank">Serge Belongie</a>.</p>
+                <p>Prior to joining DTU, I obtained my Master's degree from the <a href="https://www.kth.se/en" target="_blank">KTH Royal Institute of Technology</a> and my Bachelor's degree from the <a href="https://unige.it/en" target="_blank">University of Genova</a>. I have interned at <a href="https://www.smrc.se/" target="_blank">SMaRC</a>, <a href="https://www.aptiv.com/" target="_blank">Aptiv</a>, and <a href="https://www.tudelft.nl/en/" target="_blank">TU Delft</a>.</p>
+                
+                <!-- Affiliation Logos Section -->
+                <h3 class="visually-hidden">Affiliations</h3>
+                <div class="affiliation-logos">
+                    <div class="affiliation-logo">
+                        <img src="images/dtu_logo.png" alt="DTU Logo">
+                    </div>
+                    <!-- <div class="affiliation-logo">
+                        <img src="images/belongie-lab-logo.png" alt="Belongie Lab Logo">
+                    </div> -->
+                    <div class="affiliation-logo pioneer-logo">
+                        <img src="images/PCAI_Horizontal_Rgb.png" alt="Pioneer AI Logo">
+                    </div>
+                    <div class="affiliation-logo kth-logo">
+                        <img src="images/kth-logo.png" alt="KTH Logo">
+                    </div>
+                    <div class="affiliation-logo unige-logo">
+                        <img src="images/logo_unige.png" alt="University of Genova Logo">
+                    </div>
+                    <div class="affiliation-logo">
+                        <img src="images/smarc-logo.png" alt="SMaRC Logo">
+                    </div>
+                    <div class="affiliation-logo aptiv-logo">
+                        <img src="images/aptiv.png" alt="Aptiv Logo">
+                    </div>
+                    <div class="affiliation-logo tudelft-logo">
+                        <img src="images/TUDelft_logo_cmyk.png" alt="TU Delft Logo">
+                    </div>
+                </div>
+            </section>
 
-          <h2>Research Interests</h2>
-          <ul>
-            <li>Image Editing</li>
-            <li>Diffusion Models</li>
-            <li>Generative Models</li>
-          </ul>
-        </section>
+            <!-- Research Section -->
+            <section id="research" class="section">
+                <h2>Research</h2>               
+                <ul>    
+                    <li>Image Editing</li>
+                    <li>Diffusion Models</li>
+                    <li>Generative AI</li>
+                </ul>
 
-        <div class="social-links">
-          <a href="https://github.com/marcoschouten" class="social-link" title="GitHub">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          </a>
-          <a href="https://twitter.com/marcoschouten_" class="social-link" title="Twitter">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
-          <a href="https://scholar.google.com/citations?user=SdQ_lIIAAAAJ" class="social-link" title="Google Scholar">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
-          </a>
-          <a href="https://www.linkedin.com/in/schoutenmarco" class="social-link" title="LinkedIn">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-        </div>
+            </section>
 
-       
-      </main>
+            <!-- Publications Section -->
+            <section id="publications" class="section">
+                <h2>Publications</h2>
+                
+                <div class="publications-container">
+                    <!-- Paper 1 -->
+                    <div class="publication-card">
+                        <a href="https://ceur-ws.org/Vol-3204/paper_33.pdf" class="publication-link">
+                            <div class="venue-label">CILC 2022</div>
+                            <div class="paper-thumbnail">
+                                <!-- Replace with actual thumbnail when available -->
+                                <img src="thumbnails/asp.png" alt="Paper thumbnail" class="thumbnail-img">
+                            </div>
+                            <div class="publication-info">
+                                <h4>An ASP-Based Approach to Master Surgical Schedule</h4>
+                                <p class="authors">Cadermatori, L., Galatà, G., Monaco, C.L., Maratea, M., Mochi, M., <strong>Schouten, M.</strong></p>
+                                <p class="venue">37th CILC 2022</p>
+                                <!-- <div class="pub-links">
+                                    <a href="papers/asp.pdf" class="pdf-link">PDF</a>
+                                    <a href="https://github.com/username/repo1" class="code-link">Code</a>
+                                    <a href="https://doi.org/10.1234/example.2023" class="doi-link">DOI</a>
+                                </div> -->
+                            </div>
+                        </a>
+                    </div>
+                    
+                    
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content" style="justify-content: center;">
+                <p style="text-align: center;">&copy; 2023 Marco Schouten. Last updated: March 2025.</p>
+            </div>
+        </footer>
     </div>
-  </body>
-</html>
+</body>
+</html> 

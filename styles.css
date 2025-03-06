@@ -1,0 +1,699 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Accessibility */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Typography */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+    font-size: 17px;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.00);
+}
+
+/* Header */
+header {
+    margin-bottom: 50px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* Profile image */
+.profile-img-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 30px;
+    border: 3px solid #f0f0f0;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.profile-text h1 {
+    font-size: 2.4rem;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+    letter-spacing: -0.01em;
+}
+
+.profile-text h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.profile-text p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 3px;
+}
+
+/* Contact Links */
+.contact-links {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 18px;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 6px;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding: 4px 9px;
+    border-radius: 16px;
+    font-weight: 500;
+    transition: all 0.2s;
+    white-space: nowrap;
+    height: 24px;
+}
+
+.contact-link svg {
+    margin-right: 5px;
+    width: 14px;
+    height: 14px;
+}
+
+.contact-link.email {
+    background-color: #3273dc;
+    color: white;
+}
+
+.contact-link.github {
+    background-color: #24292e;
+    color: white;
+}
+
+.contact-link.scholar {
+    background-color: #4285f4;
+    color: white;
+}
+
+.contact-link.linkedin {
+    background-color: #0077b5;
+    color: white;
+}
+
+.contact-link.x {
+    background-color: #000000;
+    color: white;
+}
+
+.contact-link.bsky {
+    background-color: #1DA1F2;
+    color: white;
+}
+
+.contact-link:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+nav li {
+    margin-right: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: all 0.2s;
+    position: relative;
+}
+
+nav a:hover {
+    color: #3273dc;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #3273dc;
+    transition: width 0.2s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    color: #1a1a1a;
+    letter-spacing: -0.01em;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 30px 0 18px;
+    color: #333;
+}
+
+h4 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #444;
+    font-size: 1.05rem;
+}
+
+p a {
+    color: #3273dc;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+}
+
+p a:hover {
+    border-color: #3273dc;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Buttons */
+.buttons {
+    margin: 25px 0;
+}
+
+.button {
+    display: inline-block;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 8px 16px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    background-color: #e9e9e9;
+    border-color: #ccc;
+}
+
+/* Publications */
+.publications-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.publication-card {
+    max-width: 650px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: white;
+    border: 1px solid #f0f0f0;
+}
+
+.publication-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.publication-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.venue-label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: #3273dc;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 2;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    letter-spacing: 0.02em;
+}
+
+.paper-thumbnail {
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(135deg, #f1f5f9 0%, #e6edf5 100%);
+}
+
+.publication-card:nth-child(2) .paper-thumbnail {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+}
+
+.publication-card:nth-child(3) .paper-thumbnail {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+}
+
+.thumbnail-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.4s ease;
+}
+
+.publication-link:hover .thumbnail-img {
+    transform: scale(1.05);
+}
+
+.publication-info {
+    padding: 24px;
+}
+
+.publication-info h4 {
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.publication-info .authors {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.publication-info .venue {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 18px;
+    font-style: italic;
+}
+
+.pub-links {
+    display: flex;
+    gap: 15px;
+    border-top: 1px solid #f2f2f2;
+    padding-top: 15px;
+}
+
+.pub-links a {
+    font-size: 0.85rem;
+    color: #3273dc;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.pdf-link::before,
+.code-link::before,
+.doi-link::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.pdf-link::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16' fill='%233273dc'%3E%3Cpath d='M12 16v-4M8 12h8M12 8V4m8 12V8a2 2 0 00-2-2h-4a2 2 0 00-2 2v8a2 2 0 002 2h4a2 2 0 002-2z'/%3E%3C/svg%3E");
+}
+
+.code-link::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16' fill='%233273dc'%3E%3Cpath d='M8 6l-6 6 6 6M16 6l6 6-6 6'/%3E%3C/svg%3E");
+}
+
+.doi-link::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16' fill='%233273dc'%3E%3Cpath d='M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 13a3 3 0 110-6 3 3 0 010 6z'/%3E%3C/svg%3E");
+}
+
+.pub-links a:hover {
+    color: #2160c4;
+    transform: translateY(-1px);
+}
+
+/* Projects */
+.project {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #eee;
+}
+
+.project:last-child {
+    border-bottom: none;
+}
+
+/* Courses */
+.course-list li {
+    margin-bottom: 15px;
+    list-style-type: none;
+}
+
+.course-list h4 {
+    margin-bottom: 5px;
+}
+
+.course-list p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #0366d6;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    margin-top: 60px;
+    padding-top: 25px;
+    border-top: 1px solid #eee;
+    color: #666;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-content p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.contact-info {
+    text-align: right;
+}
+
+/* Affiliation Logos */
+.affiliation-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    align-items: center;
+    padding: 22px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.affiliation-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    transition: transform 0.2s;
+}
+
+.affiliation-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: none;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+/* Special logo styling */
+/* University of Genoa logo */
+.unige-logo {
+    height: 85px;
+    position: relative;
+    z-index: 1;
+}
+
+.unige-logo img {
+    max-width: 130%;
+    max-height: 130%;
+    transform: scale(1.4);
+    transform-origin: center;
+    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.1));
+}
+
+/* TU Delft logo */
+.tudelft-logo {
+    height: 80px;
+    position: relative;
+    z-index: 1;
+}
+
+.tudelft-logo img {
+    max-width: 125%;
+    max-height: 125%;
+    transform: scale(1.3);
+    transform-origin: center;
+    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.1));
+}
+
+/* Pioneer logo */
+.pioneer-logo {
+    grid-column: span 2;
+    height: 60px;
+}
+
+.pioneer-logo img {
+    max-height: 80px;
+    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.1));
+}
+
+/* Aptiv logo */
+.aptiv-logo {
+    height: 80px;
+    position: relative;
+    z-index: 1;
+    transform: translateX(-25px);
+}
+
+.aptiv-logo img {
+    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.1));
+    transform: scale(1.20);
+    transform-origin: center;
+}
+
+/* DTU logo - add slight zoom */
+.affiliation-logo:first-child {
+    position: relative;
+    z-index: 1;
+}
+
+.affiliation-logo:first-child img {
+    transform: scale(1.05);
+    transform-origin: center;
+}
+
+/* Specific styling for Aptiv logo */
+.affiliation-logo img[src*="aptiv_logo_color_rgb.eps"] {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+/* KTH logo */
+.kth-logo {
+    position: relative;
+    z-index: 1;
+}
+
+.kth-logo img {
+    transform: scale(1.1); /* 10% zoom */
+    transform-origin: center;
+    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.1));
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 15px;
+    }
+    
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-img-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .contact-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    
+    .contact-link {
+        font-size: 0.75rem;
+        padding: 4px 8px;
+        height: 22px;
+    }
+    
+    .contact-link svg {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .affiliation-logos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        padding: 18px 12px;
+        max-width: 90%;
+    }
+    
+    .affiliation-logo {
+        height: 55px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav li {
+        margin-bottom: 10px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-info {
+        text-align: center;
+    }
+    
+    .pioneer-logo {
+        grid-column: auto;
+        height: 50px;
+    }
+    
+    .unige-logo, .tudelft-logo, .kth-logo {
+        height: 70px;
+    }
+    
+    .unige-logo img, .tudelft-logo img {
+        transform: scale(1.2);
+    }
+    
+    .kth-logo img {
+        transform: scale(1.1);
+    }
+    
+    /* Keep DTU logo slight zoom */
+    .affiliation-logo:first-child img {
+        transform: scale(1.05);
+    }
+    
+    /* Adjust Aptiv logo for mobile */
+    .aptiv-logo {
+        transform: translateX(-3px); /* Less shift on mobile */
+    }
+    
+    .aptiv-logo img {
+        transform: scale(1.05); /* Keep the same zoom */
+    }
+}
