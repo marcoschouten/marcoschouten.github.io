@@ -19,8 +19,8 @@
                 <div class="profile-text">
                     <h1>Marco Schouten</h1>
                     <h2>Ph.D. Student</h2>
-                    <p>Department of Computer Science</p>
-                    <p>Technical University of Denmark (DTU)</p>
+                    <p style="color: #666;">Department of Computer Science</p>
+                    <p style="color: #666;">Technical University of Denmark (DTU)</p>
                     
                    
 
@@ -58,7 +58,6 @@
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#research">Research</a></li>
                     <li><a href="#publications">Publications</a></li>
                 </ul>
             </nav>
@@ -66,52 +65,67 @@
 
         <!-- Main Content -->
         <main>
-            <!-- About Section -->
-            <section id="about" class="section">
-                <h2>About Me</h2>
-                <p>I am a PhD candidate at the <a href="https://www.dtu.dk/english" target="_blank">Technical University of Denmark (DTU)</a>, affiliated with the <a href="https://pioneer.dtu.dk/" target="_blank">Pioneer Centre for AI</a> and the <a href="https://www.belongielab.org/" target="_blank">Belongie Lab</a>, under the supervision of Professors <a href="https://people.csail.mit.edu/dimpapa/" target="_blank">Dim Papadopoulos</a> and <a href="https://sergebelongie.github.io/" target="_blank">Serge Belongie</a>.</p>
-                <p>Prior to joining DTU, I obtained my Master's degree from the <a href="https://www.kth.se/en" target="_blank">KTH Royal Institute of Technology</a> and my Bachelor's degree from the <a href="https://unige.it/en" target="_blank">University of Genova</a>. I have interned at <a href="https://www.smarc.se/" target="_blank">Swedish Maritime Robotic Centre</a>, <a href="https://www.aptiv.com/" target="_blank">Aptiv</a>, and <a href="https://www.tudelft.nl/en/" target="_blank">TU Delft</a>.</p>
+            <!-- Two Column Layout for About and News -->
+            <div class="two-column-container">
+                <!-- About Section -->
+                <section id="about" class="section left-column">
+                    <h2>About Me</h2>
+                    <p>I am a PhD candidate at the <a href="https://www.dtu.dk/english" target="_blank">Technical University of Denmark (DTU)</a>, affiliated with the <a href="https://pioneer.dtu.dk/" target="_blank">Pioneer Centre for AI</a> and the <a href="https://www.belongielab.org/" target="_blank">Belongie Lab</a>, under the supervision of Professors <a href="https://people.csail.mit.edu/dimpapa/" target="_blank">Dim Papadopoulos</a> and <a href="https://sergebelongie.github.io/" target="_blank">Serge Belongie</a>.</p>
+                    <p>Prior to joining DTU, I obtained my Master's degree from the <a href="https://www.kth.se/en" target="_blank">KTH Royal Institute of Technology</a> and my Bachelor's degree from the <a href="https://unige.it/en" target="_blank">University of Genova</a>. I have interned at <a href="https://www.smarc.se/" target="_blank">Swedish Maritime Robotic Centre</a>, <a href="https://www.aptiv.com/" target="_blank">Aptiv</a>, and <a href="https://www.tudelft.nl/en/" target="_blank">TU Delft</a>.</p>
+                    
+                    <!-- Research Section -->
+                    <h2 style="margin-top: 30px;">Research Focus</h2>               
+                    <ul>    
+                        <li>Image Editing</li>
+                        <li>Diffusion Models</li>
+                        <li>Generative AI</li>
+                    </ul>
+                </section>
                 
-                <!-- Affiliation Logos Section -->
-                <h3 class="visually-hidden">Affiliations</h3>
-                <div class="affiliation-logos">
-                    <div class="affiliation-logo">
-                        <img src="images/dtu_logo.png" alt="DTU Logo">
+                <!-- News Section in right column -->
+                <section class="section right-column">
+                    <h2 style="margin-top: 0;">News</h2>
+                    <div class="news-container">
+                        <p class="news-item"><span class="date">🎓 [2023.11]</span> Began PhD program at DTU, focusing on Generative AI.</p>
+                        <p class="news-item"><span class="date">🚚 [2023.03]</span> Joined Aptiv as a research intern working on HD Maps for Autonomous Driving</p>
+                        <p class="news-item"><span class="date">🤖 [2022.09]</span> Completed MSc in Machine Learning at KTH.</p>
+                        <p class="news-item"><span class="date">🛥️ [2022.02]</span> Joined SMaRC as a research intern, working on AUV Pose Estimation.</p>
+                        <p class="news-item"><span class="date">🇳🇱 [2021.08]</span> Joined TU Delft as graduate exchange.</p>   
+                        <p class="news-item"><span class="date">🖥️ [2020.07]</span> Completed BSc in Computer Engineering at UniGe.</p>
                     </div>
-                    <!-- <div class="affiliation-logo">
-                        <img src="images/belongie-lab-logo.png" alt="Belongie Lab Logo">
-                    </div> -->
-                    <div class="affiliation-logo pioneer-logo">
-                        <img src="images/PCAI_Horizontal_Rgb.png" alt="Pioneer AI Logo">
-                    </div>
-                    <div class="affiliation-logo kth-logo">
-                        <img src="images/kth-logo.png" alt="KTH Logo">
-                    </div>
-                    <div class="affiliation-logo unige-logo">
-                        <img src="images/logo_unige.png" alt="University of Genova Logo">
-                    </div>
-                    <div class="affiliation-logo">
-                        <img src="images/smarc-logo.png" alt="SMaRC Logo">
-                    </div>
-                    <div class="affiliation-logo aptiv-logo">
-                        <img src="images/aptiv.png" alt="Aptiv Logo">
-                    </div>
-                    <div class="affiliation-logo tudelft-logo">
-                        <img src="images/TUDelft_logo_cmyk.png" alt="TU Delft Logo">
-                    </div>
+                </section>
+            </div>
+
+           
+
+            <!-- Affiliation Logos Section -->
+            <h3 class="visually-hidden">Affiliations</h3>
+            <div class="affiliation-logos">
+                <div class="affiliation-logo">
+                    <img src="images/dtu_logo.png" alt="DTU Logo">
                 </div>
-            </section>
-
-            <!-- Research Section -->
-            <section id="research" class="section">
-                <h2>Research</h2>               
-                <ul>    
-                    <li>Image Editing</li>
-                    <li>Diffusion Models</li>
-                    <li>Generative AI</li>
-                </ul>
-
-            </section>
+                <!-- <div class="affiliation-logo">
+                    <img src="images/belongie-lab-logo.png" alt="Belongie Lab Logo">
+                </div> -->
+                <div class="affiliation-logo pioneer-logo">
+                    <img src="images/PCAI_Horizontal_Rgb.png" alt="Pioneer AI Logo">
+                </div>
+                <div class="affiliation-logo kth-logo">
+                    <img src="images/kth-logo.png" alt="KTH Logo">
+                </div>
+                <div class="affiliation-logo unige-logo">
+                    <img src="images/logo_unige.png" alt="University of Genova Logo">
+                </div>
+                <div class="affiliation-logo">
+                    <img src="images/smarc-logo.png" alt="SMaRC Logo">
+                </div>
+                <div class="affiliation-logo aptiv-logo">
+                    <img src="images/aptiv.png" alt="Aptiv Logo">
+                </div>
+                <div class="affiliation-logo tudelft-logo">
+                    <img src="images/TUDelft_logo_cmyk.png" alt="TU Delft Logo">
+                </div>
+            </div>
 
             <!-- Publications Section
             <section id="publications" class="section">
@@ -163,7 +177,7 @@
         <!-- Footer -->
         <footer>
             <div class="footer-content" style="justify-content: center;">
-                <p style="text-align: center;">&copy; 2023 Marco Schouten. Last updated: March 2025.</p>
+                <p style="text-align: center;">&copy; 2023 Marco Schouten.</p>
             </div>
         </footer>
     </div>

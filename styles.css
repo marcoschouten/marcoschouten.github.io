@@ -23,16 +23,90 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #ffffff;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 /* Container */
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 40px 20px;
     background-color: #fff;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.00);
+}
+
+/* Two Column Layout */
+.two-column-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    gap: 50px;
+    align-items: stretch;
+}
+
+.left-column {
+    flex: 3;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-column {
+    flex: 2;
+    min-width: 280px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* News Section */
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex-grow: 1;
+}
+
+.news-item {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 0.25rem;
+    padding: 4px 5px;
+    border-bottom: none;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    transition: background-color 0.2s ease;
+    border-radius: 4px;
+    color: #444;
+    white-space: normal;
+    overflow: visible;
+}
+
+/* Style for the date portion of news items */
+.news-item strong, 
+.news-item span.date {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: 500;
+    margin-right: 3px;
+    display: inline-block;
+    min-width: 95px;
+    vertical-align: top;
+}
+
+.news-item:hover {
+    background-color: rgba(50, 115, 220, 0.05);
+}
+
+/* Make emojis slightly larger */
+.news-item:before {
+    font-size: 1.1em;
+}
+
+.news-item:last-child {
+    border-bottom: none;
 }
 
 /* Header */
@@ -606,6 +680,23 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .two-column-container {
+        flex-direction: column;
+    }
+    
+    .left-column,
+    .right-column {
+        flex: 1 1 100%;
+    }
+    
+    .right-column {
+        margin-top: -10px;  /* Reduced from -20px for better spacing */
+    }
+    
+    .news-item {
+        font-size: 0.9rem;
+    }
+    
     .container {
         padding: 20px 15px;
     }
@@ -622,8 +713,6 @@ footer {
     
     .contact-links {
         justify-content: center;
-        flex-wrap: wrap;
-        gap: 5px;
     }
     
     .contact-link {
