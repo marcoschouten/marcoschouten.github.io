@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Marco Schouten"
 title_separator          : "-"
 name                     : &name "Marco Schouten"
-description              : &description "PhD Candidate in Computer Science"
+description              : &description "PhD in Computer Vision at DTU"
 url                      : "" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "marcoschouten/marcoschouten.github.io"
@@ -24,11 +24,11 @@ author:
   # Biographic information
   avatar           : "marco.png"
   name             : "Marco Schouten"
-  pronouns         : "he/him"  
-  bio              : "PhD Candidate in Computer Science at DTU"
+  pronouns         : # "he/him"  
+  bio              : "PhD in Computer Vision at DTU"
   location         : "Copenhagen, Denmark"
   employer         : "DTU"
-  uri              : "https://marcoschouten.github.io"
+  # uri              : "https://marcoschouten.github.io"
   email            : # "m.j.schouten@dtu.dk" 
 
   # Academic websites
