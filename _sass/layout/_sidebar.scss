@@ -84,12 +84,11 @@
   display: table-cell;
   vertical-align: top;
   width: 36px;
-  height: 36px;
 
   @include breakpoint($large) {
     display: block;
-    width: 175px;
-    height: 175px;
+    width: auto;
+    height: auto;
   }
 
   img {
@@ -97,7 +96,6 @@
     width: 175px;
     height: 175px;
     border-radius: 50%;
-    object-fit: cover;
 
     @include breakpoint($large) {
       padding: 5px;
