@@ -6,14 +6,14 @@ tr,
 p,
 a {
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   color: #333;
 }
 
 strong {
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -21,14 +21,14 @@ h2 {
   margin: 0;
   font-weight: 600;
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
+  font-size: 28px;
   color: #222;
   margin-bottom: 1rem;
 }
 
 .papertitle {
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: #1772d0;
 }
@@ -37,7 +37,7 @@ h2 {
   padding-top: 20px;
   margin: 0;
   font-family: 'Inter', sans-serif;
-  font-size: 36px;
+  font-size: 42px;
   font-weight: 600;
   color: #222;
 }
