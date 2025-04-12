@@ -1,4 +1,14 @@
-/* Remove Lato font-face declarations and replace with Inter */
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
 body,
 td,
 th,
@@ -6,52 +16,32 @@ tr,
 p,
 a {
   font-family: 'Inter', sans-serif;
-  font-size: 20px;
-  line-height: 1.6;
-  color: #333;
+  font-size: 16px;
 }
 
 strong {
   font-family: 'Inter', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 16px;
 }
 
 h2 {
   margin: 0;
-  font-weight: 600;
+  font-weight: normal;
   font-family: 'Inter', sans-serif;
-  font-size: 32px;
-  color: #222;
-  margin-bottom: 1rem;
+  font-size: 24px;
 }
 
 .papertitle {
   font-family: 'Inter', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  color: #1772d0;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .name {
   padding-top: 20px;
   margin: 0;
   font-family: 'Inter', sans-serif;
-  font-size: 46px;
-  font-weight: 600;
-  color: #222;
-}
-
-a {
-  color: #1772d0;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-a:focus,
-a:hover {
-  color: #f09228;
-  text-decoration: none;
+  font-size: 36px;
 }
 
 .one {
