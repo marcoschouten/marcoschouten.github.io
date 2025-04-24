@@ -37,43 +37,53 @@
         <td style="padding:0px">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <td style="padding:2.5%;width:70%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
                   Marco Schouten
                 </p>
-                <p>I am a Doctoral Candidate at <a href="https://www.dtu.dk/">DTU</a> and the <a href="https://www.aicentre.dk/">Pioneer Centre for AI</a>. I am fortunate to be co-advised by <a href="https://people.csail.mit.edu/dimpapa/">Dim P. Papadopoulos</a> and <a href="https://sergebelongie.github.io/">Serge Belongie</a>. Previously, I was a research intern at Aptiv and TU Delft, and earned my M.Sc. from <a href="https://www.kth.se/">KTH Royal Institute of Technology</a>.
+                <p style="text-align: center;; margin-bottom: 20px; font-weight: 500; color: #555;">
+                  Doctoral Researcher @ DTU and Pioneer Centre for AI
+                </p>
+                <p style="margin-bottom: 18px;">I am a Doctoral Researcher at the <a href="https://www.dtu.dk/">Technical University of Denmark</a> and the <a href="https://www.aicentre.dk/">Pioneer Centre for AI</a>. I am co-advised by <a href="https://people.csail.mit.edu/dimpapa/">Dim P. Papadopoulos</a> and <a href="https://sergebelongie.github.io/">Serge Belongie</a>, focusing on generative models and multimodal learning. Previously, I was a research intern at Aptiv and <a href="https://www.tudelft.nl/">TU Delft</a>, and earned my M.Sc. from <a href="https://www.kth.se/">KTH Royal Institute of Technology</a>.</p>
+                
+                <p style="margin-bottom: 18px;"><span style="font-weight: 500;">Research Interest:</span> Generative Models, Multimodal Learning, Computer Vision.</p>
+                <p style="text-align:center; color: #555; margin-bottom: 5px;">marscho [at] dtu [dot] dk</p>
+                <p style="text-align:center; color: #555; margin-bottom: 18px;">Copenhagen 🇩🇰</p>
                 <p style="text-align:center">
                   <!-- <a href="data/MarcoSchouten-CV.pdf">CV</a> &nbsp;/&nbsp; -->
                   <a href="https://scholar.google.com/citations?user=SdQ_lIIAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://x.com/marcoschouten_">Twitter</a> &nbsp;/&nbsp;
+                  <!-- <a href="https://x.com/marcoschouten_">Twitter</a> &nbsp;/&nbsp; -->
                   <a href="https://github.com/marcoschouten">Github</a> &nbsp;/&nbsp;
                   <a href="https://www.linkedin.com/in/schoutenmarco/">LinkedIn</a>
                 </p>
-                <p style="text-align:center">marscho [at] dtu [dot] dk</p>
-                <p style="text-align:center">Copenhagen 🇩🇰</p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/marco_square.jpg" aria-label="View full size profile photo"><img style="width:80%;max-width:80%;object-fit: cover; border-radius: 50%;" alt="Marco Schouten profile photo" src="images/marco_square.jpg" class="hoverZoomLink"></a>
+                <div class="profile-image-wrapper">
+                  <img src="images/marco_square.jpg" alt="Marco Schouten profile photo" class="profile-image" style="width: 90%; height: 90%;">
+                </div>
               </td>
+              
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                <p>
-                  My research focuses on generative models, multimodal learning, and the intersection of computer vision and natural language processing.</p>
-              </td>
+                <h2 style="margin-bottom: 5px;">Research</h2>
+                     </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr onmouseout="poem_stop()" onmouseover="poem_start()" bgcolor="#ffffd0">
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='poem_image'><video width=100% height=100% muted autoplay loop aria-label="POEM demo video">
-                    <source src="images/poem.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video></div>
+                  <div class="two" id='poem_image'>
+                    <!-- Video removed due to missing file 
+                    <video width=100% height=100% muted autoplay loop aria-label="POEM demo video">
+                      <source src="images/poem.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                    -->
+                  </div>
                   <img src='images/poem.png' alt="POEM project thumbnail" width="160" style="display: block; margin: 0 auto;">
                 </div>
                 <script type="text/javascript">
@@ -86,7 +96,7 @@
                   poem_stop()
                 </script>
               </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
+              <td style="padding:16px;width:80%;vertical-align:middle">
                 <a href="https://poem.compute.dtu.dk/">
                   <span class="papertitle">POEM: Precise Object-level Editing via MLLM control</span>
                 </a>
