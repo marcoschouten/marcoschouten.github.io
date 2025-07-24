@@ -270,3 +270,26 @@ a:hover {
 .venue-row .pub-links a:last-child {
     margin-right: 0;
 }
+
+
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 20px 0;
+    background-color: #fff; /* Optional: white background */
+  }
+  
+  .social-links a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    opacity: 0.85;
+    
+  }
+  
+  .social-links a:hover img {
+    transform: scale(1.15);
+    opacity: 1;
+  }
