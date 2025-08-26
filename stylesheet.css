@@ -82,16 +82,24 @@ h1 {
     margin-top: 10px;
 }
 
+.logo-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px; /* Adds space around the logo */
+    border-radius: 4px;
+}
+
 .university-logos img {
     height: 35px; /* Sets the default size for larger screens */
     width: auto;
     border-radius: 0; /* Prevents the logos from being cropped into circles */
 }
 
-/* Dark mode invert for logos */
+/* Dark mode styling for logo backgrounds */
 @media (prefers-color-scheme: dark) {
-    .university-logos img {
-        filter: invert(1);
+    .logo-background {
+        background-color: #ffffff; /* White background for logos */
     }
 }
 
@@ -271,8 +279,6 @@ a:hover {
 .venue-row .pub-links a:last-child {
     margin-right: 0;
 }
-
-
 
 .social-links {
     display: flex;
