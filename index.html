@@ -7,32 +7,38 @@
   <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-  <main>
+  <main class="container">
     <header>
-      <h1>Marco Schouten</h1>
-      <p>PhD student, DTU · Copenhagen</p>
+      <div class="profile">
+        <div class="profile-text">
+          <h1>Marco Schouten</h1>
+          <div class="subtitle">PhD student · Copenhagen, DK</div>
+        </div>
+      </div>
     </header>
 
-    <section>
+    <section class="about">
       <p>I am a PhD student at DTU and the Pioneer Centre for AI in Copenhagen, working on computer vision and machine learning. I am advised by 
         <a href="https://dimipapa.github.io/" target="_blank" rel="noopener noreferrer">Dim P. Papadopoulos</a> 
         and <a href="https://sergebelongie.github.io/" target="_blank" rel="noopener noreferrer">Serge Belongie</a>.
       </p>
     </section>
 
-    <nav>
+    <nav class="social-links" aria-label="Social links">
       <ul>
-        <li>Email: marscho [at] dtu.dk</li>
+        <li>
+          <a href="#" onclick="window.location.href='mailto:'+'marscho'+'@'+'dtu.dk'">Email</a>
+        </li>
         <li><a href="https://scholar.google.com/citations?user=SdQ_lIIAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
         <li><a href="https://github.com/marcoschouten" target="_blank">GitHub</a></li>
         <li><a href="CV_Marco_Schouten.pdf" target="_blank">CV</a></li>
       </ul>
     </nav>
 
-    <section>
+    <section class="publications">
       <h2>Publications</h2>
 
-      <article>
+      <article class="publication">
         <h3>POEM: Precise Object-level Editing via MLLM control</h3>
         <p>Marco Schouten, M. Onurcan Kaya, Serge Belongie, Dim P. Papadopoulos</p>
         <p><em>SCIA</em>, 2025 · 
@@ -42,7 +48,7 @@
         <p>POEM enables object-level image editing from text instructions using MLLM control for diffusion models.</p>
       </article>
 
-      <article>
+      <article class="publication">
         <h3>An ASP-based Approach to Master Surgical Scheduling</h3>
         <p>Linda Cadermatori, Giuseppe Galatà, Carola Lo Monaco, Marco Maratea, Marco Mochi, Marco Schouten</p>
         <p><em>CILC</em>, 2022 · 
@@ -51,7 +57,7 @@
         <p>Answer Set Programming-based solution for scheduling hospital operating rooms, tested on real scenarios.</p>
       </article>
 
-      <article>
+      <article class="publication">
         <h3>Answer Set Programming in Healthcare: Extended Overview</h3>
         <p>Mario Alviano, Riccardo Bertolucci, Matteo Cardellini, Carmine Dodaro, Giuseppe Galata, Muhammad Kamran Khan, Marco Maratea, Marco Mochi, Victoria Morozan, Ivan Porro, Marco Schouten</p>
         <p><em>IPS-RCRA@ AI*IA</em>, 2020 · 
@@ -61,7 +67,7 @@
       </article>
     </section>
 
-    <footer>
+    <footer class="site-footer">
       <p>© 2025 Marco Schouten</p>
     </footer>
   </main>
