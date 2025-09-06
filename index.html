@@ -2,68 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marco Schouten</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal website of Marco Schouten, PhD student at DTU.">
+  <meta name="author" content="Marco Schouten">
+  <meta name="robots" content="index,follow">
+
+  <link rel="canonical" href="https://marcoschouten.github.io/">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Marco Schouten">
+  <meta property="og:url" content="https://marcoschouten.github.io/">
+  <meta property="og:title" content="Marco Schouten — PhD student at DTU">
+  <meta property="og:description" content="PhD student at DTU. Research in computer vision and machine learning.">
+  <meta property="og:image" content="https://marcoschouten.github.io/images/marco_square.jpg">
+  <meta property="og:image:alt" content="Portrait photo of Marco Schouten">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://marcoschouten.github.io/">
+  <meta name="twitter:title" content="Marco Schouten — PhD student at DTU">
+  <meta name="twitter:description" content="PhD student at DTU. Research in computer vision and machine learning.">
+  <meta name="twitter:image" content="https://marcoschouten.github.io/images/marco_square.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="stylesheet.css">
+
+  <title>Marco Schouten — PhD student at DTU</title>
 </head>
 <body>
   <main class="container">
     <header>
       <div class="profile">
+        <img src="images/marco_square.jpg" alt="Portrait of Marco Schouten" width="160" height="160" decoding="async" fetchpriority="high">
         <div class="profile-text">
           <h1>Marco Schouten</h1>
-          <div class="subtitle">PhD student · Copenhagen, DK</div>
+          <div class="subtitle">PhD student · Copenhagen, Denmark</div>
         </div>
       </div>
     </header>
 
-    <section class="about">
-      <p>I am a PhD student at DTU and the Pioneer Centre for AI in Copenhagen, working on computer vision and machine learning. I am advised by 
-        <a href="https://dimipapa.github.io/" target="_blank" rel="noopener noreferrer">Dim P. Papadopoulos</a> 
-        and <a href="https://sergebelongie.github.io/" target="_blank" rel="noopener noreferrer">Serge Belongie</a>.
-      </p>
+    <section class="about" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>I am a PhD student at DTU and the Pioneer Centre for AI. My research interests are computer vision and machine learning. I am advised by <a href="https://dimipapa.github.io/" target="_blank" rel="noopener noreferrer">Dim P. Papadopoulos</a> and <a href="https://sergebelongie.github.io/" target="_blank" rel="noopener noreferrer">Serge Belongie</a>. I hold an M.Sc. from KTH Royal Institute of Technology and a B.Sc. from the University of Genoa.</p>
     </section>
 
     <nav class="social-links" aria-label="Social links">
-      <ul>
-        <li>
-          <a href="#" onclick="window.location.href='mailto:'+'marscho'+'@'+'dtu.dk'">Email</a>
-        </li>
-        <li><a href="https://scholar.google.com/citations?user=SdQ_lIIAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
-        <li><a href="https://github.com/marcoschouten" target="_blank">GitHub</a></li>
-        <li><a href="CV_Marco_Schouten.pdf" target="_blank">CV</a></li>
+      <ul style="display:flex; gap:14px; list-style:none; padding:0; margin:0; flex-wrap:wrap;">
+        <li><span><i class="fa-solid fa-envelope" aria-hidden="true"></i> marscho [at] dtu.dk</span></li>
+        <li><a href="https://scholar.google.com/citations?user=SdQ_lIIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar profile"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a></li>
+        <li><a href="https://github.com/marcoschouten" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a></li>
+        <li><a href="CV_Marco_Schouten.pdf" target="_blank" rel="noopener noreferrer" type="application/pdf" aria-label="Curriculum Vitae PDF"><i class="fa-solid fa-file-lines" aria-hidden="true"></i> CV</a></li>
       </ul>
     </nav>
 
-    <section class="publications">
-      <h2>Publications</h2>
+    <section class="publications" aria-labelledby="pubs-title">
+      <h2 id="pubs-title">Publications</h2>
 
       <article class="publication">
-        <h3>POEM: Precise Object-level Editing via MLLM control</h3>
-        <p>Marco Schouten, M. Onurcan Kaya, Serge Belongie, Dim P. Papadopoulos</p>
-        <p><em>SCIA</em>, 2025 · 
-          <a href="https://poem.compute.dtu.dk/" target="_blank">Webpage</a> · 
-          <a href="https://arxiv.org/abs/2504.08111" target="_blank">arXiv</a>
-        </p>
-        <p>POEM enables object-level image editing from text instructions using MLLM control for diffusion models.</p>
+        <div class="publication-image">
+          <img src="images/poem.png" alt="Thumbnail for POEM" width="140" height="140" loading="lazy" decoding="async">
+        </div>
+        <div class="publication-content">
+          <h3>POEM: Precise Object-level Editing via MLLM control</h3>
+          <p class="authors">
+            <strong>Marco Schouten</strong>, 
+            <a href="https://github.com/monurcan" target="_blank" rel="noopener noreferrer">M. Onurcan Kaya</a>, 
+            <a href="https://sergebelongie.github.io/" target="_blank" rel="noopener noreferrer">Serge Belongie</a>, 
+            <a href="https://dimipapa.github.io/" target="_blank" rel="noopener noreferrer">Dim P. Papadopoulos</a>
+          </p>
+          <p class="venue-row">
+            <span class="venue"><em>SCIA</em>, 2025</span>
+            <span class="pub-links">
+              <a href="https://poem.compute.dtu.dk/" target="_blank" rel="noopener noreferrer">webpage</a>
+              <a href="https://arxiv.org/abs/2504.08111" target="_blank" rel="noopener noreferrer">arXiv</a>
+            </span>
+          </p>
+          <p class="description">A method for object-level image editing using MLLMs to guide diffusion models.</p>
+        </div>
       </article>
 
       <article class="publication">
-        <h3>An ASP-based Approach to Master Surgical Scheduling</h3>
-        <p>Linda Cadermatori, Giuseppe Galatà, Carola Lo Monaco, Marco Maratea, Marco Mochi, Marco Schouten</p>
-        <p><em>CILC</em>, 2022 · 
-          <a href="https://www.marcomochi.me/publications/An%20ASP-Based%20Approach%20to%20Master%20Surgical%20Schedule.pdf" target="_blank">PDF</a>
-        </p>
-        <p>Answer Set Programming-based solution for scheduling hospital operating rooms, tested on real scenarios.</p>
+        <div class="publication-image">
+          <img src="images/mss_2.png" alt="Thumbnail for ASP-based Master Surgical Scheduling" width="140" height="140" loading="lazy" decoding="async">
+        </div>
+        <div class="publication-content">
+          <h3>An ASP-based Approach to Master Surgical Scheduling</h3>
+          <p class="authors">Linda Cadermatori, Giuseppe Galatà, Carola Lo Monaco, Marco Maratea, Marco Mochi, <strong>Marco Schouten</strong></p>
+          <p class="venue-row">
+            <span class="venue"><em>CILC</em>, 2022</span>
+            <span class="pub-links">
+              <a href="https://www.marcomochi.me/publications/An%20ASP-Based%20Approach%20to%20Master%20Surgical%20Schedule.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+            </span>
+          </p>
+          <p class="description">ASP-based method for scheduling hospital operating rooms.</p>
+        </div>
       </article>
 
       <article class="publication">
-        <h3>Answer Set Programming in Healthcare: Extended Overview</h3>
-        <p>Mario Alviano, Riccardo Bertolucci, Matteo Cardellini, Carmine Dodaro, Giuseppe Galata, Muhammad Kamran Khan, Marco Maratea, Marco Mochi, Victoria Morozan, Ivan Porro, Marco Schouten</p>
-        <p><em>IPS-RCRA@ AI*IA</em>, 2020 · 
-          <a href="https://matteocardellini.it/publications/W1.pdf" target="_blank">PDF</a>
-        </p>
-        <p>Overview of ASP-based solutions for healthcare scheduling, including operating rooms and nurse scheduling.</p>
+        <div class="publication-image">
+          <img src="images/mss.png" alt="Thumbnail for ASP in Healthcare Overview" width="140" height="140" loading="lazy" decoding="async">
+        </div>
+        <div class="publication-content">
+          <h3>Answer Set Programming in Healthcare: Extended Overview</h3>
+          <p class="authors">Mario Alviano, Riccardo Bertolucci, Matteo Cardellini, Carmine Dodaro, Giuseppe Galata, Muhammad Kamran Khan, Marco Maratea, Marco Mochi, Victoria Morozan, Ivan Porro, <strong>Marco Schouten</strong></p>
+          <p class="venue-row">
+            <span class="venue"><em>IPS-RCRA@AI*IA</em>, 2020</span>
+            <span class="pub-links">
+              <a href="https://matteocardellini.it/publications/W1.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+            </span>
+          </p>
+          <p class="description">Overview of ASP-based approaches for healthcare scheduling problems.</p>
+        </div>
       </article>
     </section>
 
