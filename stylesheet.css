@@ -1,309 +1,142 @@
-:root {
-        --text-color: #333;
-        --text-light: #666;
-        --link-color: #1772d0;
-        --background-color: #ffffff;
-        --border-color: #eee;
-        --shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-        --max-width: 650px;
-        --spacing: 2rem;
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --text-color: #e6e6e6;
-        --text-light: #b3b3b3;
-        --link-color: #7ab0ff;
-        --background-color: #0f1115;
-        --border-color: #222;
-        --shadow: none;
-    }
+a {
+  color: #1772d0;
+  text-decoration: none;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--background-color);
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
 }
 
-.container {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 2rem 1.5rem;
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
 }
 
-/* Header */
-header {
-    margin-bottom: 1.2rem;
-}
-
-.profile {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-    margin-bottom: 0.7rem;
-}
-
-.profile img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.profile-text {
-    flex-grow: 1;
-}
-s
-h1 {
-    font-size: 1.8rem;
-    font-weight: 400;
-    color: var(--text-color);
-    margin-bottom: 0.5rem;
-}
-
-.subtitle {
-    color: var(--text-light);
-    font-size: 1rem;
-    line-height: 1.4;
-    margin-bottom: 0.5rem;
-}
-
-/* University Logos Section */
-.university-logos {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.logo-background {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px; /* Adds space around the logo */
-    border-radius: 4px;
-}
-
-.university-logos img {
-    height: 35px; /* Sets the default size for larger screens */
-    width: auto;
-    border-radius: 0; /* Prevents the logos from being cropped into circles */
-}
-
-/* Dark mode styling for logo backgrounds */
-@media (prefers-color-scheme: dark) {
-    .logo-background {
-        background-color: #ffffff; /* White background for logos */
-    }
-}
-
-/* About Section */
-.about {
-    margin-bottom: 1.5rem;
-}
-
-.about p {
-    margin-bottom: 0.6rem;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-.publications {
-    margin-top: 1.5rem;
+strong {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
 }
 
 h2 {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: var(--text-color);
-    margin-bottom: 1.5rem;
-    margin-top: 2rem;
+  margin: 0;
+  font-weight: normal;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 22px;
 }
 
-.publication {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid var(--border-color);
+.papertitle {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
 }
 
-.publication:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
+.name {
+  padding-top: 20px;
+  margin: 0;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 32px;
 }
 
-.publication-image {
-    width: 120px;
-    height: 120px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
 }
 
-.publication-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.2s ease;
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
 }
 
-.publication-image:hover img {
-    transform: scale(1.02);
+.fade {
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
 }
 
-
-
-.publication-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    line-height: 1.5;
+span.highlight {
+  background-color: #ffffd0;
 }
 
-.publication-content h3 {
-    font-size: 1rem;
-    font-weight: 600;
-    margin: 0;
-    line-height: 1.5;
-    color: var(--text-color);
-}
-
-.authors {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    color: var(--text-light);
-    margin: 0.3rem 0;
-}
-
-.venue {
-    font-style: italic;
-}
-
-.publication .links {
-    display: flex;
-    gap: 0.7rem;
-    margin: 0.3rem 0;
-    text-align: left;
-}
-
-.publication .links a {
-    font-size: 0.85rem;
-    color: var(--link-color);
-    text-decoration: none;
-    transition: opacity 0.2s ease;
-}
-
-.publication .links a:hover {
-    opacity: 0.7;
-}
-
-/* General Links */
-a {
-    color: var(--link-color);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        padding: 0.7rem;
-    }
-
-    .profile {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-    }
-
-    .profile img {
-        width: 120px;
-        height: 120px;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-    
-    .university-logos img {
-        height: 25px; /* Sets a smaller size for mobile screens */
-    }
-
-    .publication {
-        flex-direction: column;
-        gap: 0.7rem;
-    }
-
-    .publication-image {
-        align-self: center;
-        width: 100px;
-        height: 100px;
-    }
-
-    /* removed .links (unused) */
-}
-
-.venue {
-    font-style: italic;
-    color: var(--text-light);
-    font-size: 0.85rem;
-    line-height: 1.3;
-}
-
-.venue-row {
-    display: flex;
-    align-items: center;
-    gap: 0.7rem;
-    margin: 0.15rem 0 0.3rem 0;
-}
-
-.venue-row .venue {
-    font-style: italic;
-    color: var(--text-light);
-    font-size: 0.85rem;
-    line-height: 1.3;
-}
-
-.venue-row .pub-links a {
-    font-size: 0.85rem;
-    color: var(--link-color);
-    text-decoration: none;
-    margin-right: 0.5rem;
-}
-
-.venue-row .pub-links a:last-child {
-    margin-right: 0;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    padding: 20px 0 10px 0;
-}
-.social-links a {
-    color: var(--link-color);
-    font-size: 0.95rem;
-}
-
-.site-footer {
-    text-align: center;
-    margin-top: 2rem;
-    color: var(--text-light);
-    border-top: 1px solid var(--border-color);
-    padding-top: 1rem;
-    font-size: 0.9rem;
+.colored-box {
+    color: black;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
 }
