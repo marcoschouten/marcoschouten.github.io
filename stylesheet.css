@@ -107,12 +107,12 @@ a:hover {
 }
 
 .paper-img {
-  width: 160px;
-  padding-right: 16px !important;
+  width: 220px;
+  padding-right: 20px !important;
 }
 
 .paper-img img {
-  width: 160px;
+  width: 220px;
   border-radius: 4px;
   object-fit: cover;
 }
