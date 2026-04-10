@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la /c/Users/mschouten/marcoschouten.github.io/images/profile*)",
+      "Bash(git mv:*)"
+    ]
+  }
+}
