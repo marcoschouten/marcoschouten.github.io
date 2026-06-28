@@ -1,246 +1,189 @@
-/* Base */
+:root {
+  --fg: #222;
+  --muted: #666;
+  --accent: #2563c9;
+  --bg: #fbfbfa;
+  --line: #e2e2dd;
+  --card: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  max-width: 800px;
+  font-family: "Source Code Pro", ui-monospace, Menlo, Consolas, monospace;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  max-width: 720px;
   margin: 0 auto;
-  padding: 48px 24px;
-  line-height: 1.6;
-  color: #24292e;
-  background-color: #ffffff;
+  padding: 3rem 1.5rem 4rem;
+}
+
+/* Left-aligned header */
+header {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.avatar {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
 }
 
 h1 {
-  font-size: 2em;
-  margin-bottom: 6px;
-  text-align: center;
+  font-size: 1.7rem;
   font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5rem;
+}
+
+.role {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.affil {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0.1rem 0 0;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem 1.25rem;
+  margin-top: 1.1rem;
+  font-size: 0.9rem;
+}
+
+.links a {
+  color: var(--fg);
+  border-bottom: 1px solid var(--line);
+}
+
+.links a:hover {
+  border-bottom-color: var(--accent);
+  color: var(--accent);
+}
+
+.links .email {
+  color: var(--muted);
+}
+
+/* Readable left-aligned body */
+main {
+  text-align: left;
 }
 
 h2 {
-  font-size: 1.1em;
-  margin: 40px 0 14px;
-  padding-bottom: 0.3em;
-  border-bottom: 1px solid #eaecef;
+  font-size: 0.78rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #586069;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  margin: 2rem 0 0.9rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--line);
+}
+
+p {
+  margin: 0 0 0.7rem;
 }
 
 a {
-  color: #0366d6;
+  color: var(--accent);
   text-decoration: none;
+  border-bottom: 1px solid transparent;
 }
 
 a:hover {
-  text-decoration: underline;
+  border-bottom-color: var(--accent);
 }
 
-/* Header */
-.subtitle {
-  font-size: 1em;
-  color: #586069;
-  margin: 0 0 8px;
+em {
+  color: var(--muted);
 }
 
-.center {
-  text-align: center;
+/* Info list */
+.info {
+  margin: 0 0 0.7rem;
+  padding-left: 1.2rem;
 }
 
-.contact-info {
-  font-size: 0.9em;
-  color: #586069;
-  margin-top: 6px;
-}
-
-/* Profile */
-.profile {
-  display: flex;
-  gap: 32px;
-  margin: 32px 0 0;
-  align-items: flex-start;
-}
-
-.profile-text p {
-  margin: 0 0 12px;
-  font-size: 0.97em;
-}
-
-.profile img {
-  width: 150px;
-  height: 150px;
-  border-radius: 8px;
-  object-fit: cover;
-  border: 1px solid #eaecef;
-  flex-shrink: 0;
-}
-
-.internship-note {
-  display: inline-block;
-  font-size: 0.88em;
-  color: #2d6a4f;
-  background-color: #d8f3dc;
-  padding: 4px 10px;
-  border-radius: 4px;
-  font-weight: 500;
-  margin-top: 4px !important;
+.info li {
+  margin-bottom: 0.3rem;
 }
 
 /* Publications */
 .papers {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.papers tr {
-  border-bottom: 1px solid #eaecef;
-}
-
-.papers tr:last-child {
-  border-bottom: none;
-}
-
-.papers td {
-  padding: 14px 0;
-  vertical-align: top;
-}
-
-.paper-img {
-  width: 220px;
-  padding-right: 20px !important;
-}
-
-.paper-img img {
-  width: 220px;
-  border-radius: 4px;
-  object-fit: cover;
-}
-
-.paper-title {
-  display: block;
-  font-weight: 600;
-  color: #24292e;
-  line-height: 1.3;
-  margin-bottom: 2px;
-}
-
-.paper-authors {
-  display: block;
-  font-size: 0.92em;
-  color: #444;
-  line-height: 1.4;
-}
-
-.paper-venue {
-  display: block;
-  font-size: 0.88em;
-  color: #586069;
-  margin-top: 1px;
-}
-
-.me {
-  font-weight: 600;
-  color: #24292e;
-}
-
-.equal-contrib {
-  font-size: 0.9em;
-  color: #6a737d;
-}
-
-/* Experience & Education */
-.entry {
-  margin-bottom: 16px;
-}
-
-.entry-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 12px;
-}
-
-.entry-title {
-  font-weight: 600;
-  font-size: 0.97em;
-}
-
-.entry-date {
-  font-size: 0.85em;
-  color: #586069;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
-.entry-org {
-  display: block;
-  font-size: 0.92em;
-  color: #444;
-}
-
-.entry-desc {
-  display: block;
-  font-size: 0.9em;
-  color: #586069;
-  margin-top: 2px;
-}
-
-/* Service & Honors */
-.honors {
-  font-size: 0.92em;
-  color: #444;
+  list-style: none;
+  padding: 0;
   margin: 0;
-  line-height: 1.8;
 }
 
-/* Footer note */
-.footer-note {
-  font-size: 0.88em;
-  color: #6a737d;
-  margin-top: 40px;
-  padding-top: 16px;
-  border-top: 1px solid #eaecef;
+.papers li {
+  display: flex;
+  gap: 1.1rem;
+  align-items: flex-start;
+  margin-bottom: 1.1rem;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  .profile {
+.papers img {
+  width: 160px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+}
+
+.papers .title {
+  display: block;
+  font-weight: 600;
+  line-height: 1.45;
+  margin-bottom: 0.2rem;
+}
+
+.papers .authors {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.papers .venue {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #e6e6e6;
+    --muted: #9a9a9a;
+    --accent: #7aa2f7;
+    --bg: #14161a;
+    --line: #2c2f36;
+    --card: #1a1d22;
+  }
+}
+
+/* Mobile */
+@media (max-width: 560px) {
+  .papers li {
     flex-direction: column;
-    align-items: center;
+    gap: 0.6rem;
   }
 
-  .profile img {
-    width: 140px;
-    height: 140px;
-  }
-
-  .profile-text {
-    text-align: left;
-  }
-
-  .entry-header {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .entry-date {
-    font-size: 0.82em;
-  }
-
-  .papers tr {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .paper-img {
+  .papers img {
     width: 100%;
-    padding-right: 0 !important;
-    padding-bottom: 8px;
-  }
-
-  .paper-img img {
-    width: 100%;
-    max-width: 240px;
+    max-width: 260px;
   }
 }

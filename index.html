@@ -1,94 +1,95 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <title>Marco Schouten</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
-  <h1>Marco Schouten</h1>
-  <p class="center subtitle">PhD Candidate in Computer Vision · DTU &amp; Pioneer Centre for AI</p>
-  <p class="center contact-info">
-    marscho [at] dtu [dot] dk ·
-    <a href="https://scholar.google.com/citations?user=SdQ_lIIAAAAJ&hl=en">Google Scholar</a> ·
-    <a href="https://github.com/marcoschouten">GitHub</a> ·
-    <a href="https://www.linkedin.com/in/schoutenmarco/">LinkedIn</a>
-  </p>
+  <header>
+    <img class="avatar" src="images/profile.JPG" alt="Marco Schouten">
+    <h1>Marco Schouten</h1>
+    <p class="role">PhD Candidate in Computer Vision</p>
+    <p class="affil">DTU &amp; Pioneer Centre for AI</p>
+    <nav class="links">
+      <a href="https://scholar.google.com/citations?user=SdQ_lIIAAAAJ&hl=en">Scholar</a>
+      <a href="https://github.com/marcoschouten">GitHub</a>
+      <a href="https://www.linkedin.com/in/schoutenmarco/">LinkedIn</a>
+      <span class="email">marscho [at] dtu [dot] dk</span>
+    </nav>
+  </header>
 
-  <div class="profile">
-    <div class="profile-text">
-      <p>
-        I am a PhD candidate at <a href="https://www.dtu.dk/">DTU</a> and the <a href="https://www.aicentre.dk/">Pioneer
-          Centre for AI</a>,
-        advised by <a href="https://dimipapa.github.io/">Prof. Dim P. Papadopoulos</a> and
-        <a href="https://sergebelongie.github.io/">Prof. Serge Belongie</a> (<a href="https://belongielab.org/">Belongie
-          Lab</a>).
-        My research focuses on <strong>visual computing</strong>: generative models, multimodal learning,
-        and scene understanding.
-      </p>
-      <p>
-        Previously, research intern at <strong>Aptiv</strong> and the
-        <strong>Swedish Maritime Robotics Centre</strong>.
-      </p>
-      <p>Outside work I enjoy <a href="https://marcoschouten.portfoliobox.net/">drawing</a></p>
-      <p class="internship-note">
-        I will join <strong>Adobe</strong> in Paris as a Research Scientist Intern for summer 2026.
-      </p>
-    </div>
-    <img src="images/profile.JPG" alt="Marco Schouten">
-  </div>
+  <main>
+    <p>
+      I am a PhD candidate at <a href="https://www.dtu.dk/">DTU</a> and the
+      <a href="https://www.aicentre.dk/">Pioneer Centre for AI</a>,
+      advised by <a href="https://dimipapa.github.io/">Prof. Dim P. Papadopoulos</a> and
+      <a href="https://sergebelongie.github.io/">Prof. Serge Belongie</a>
+      (<a href="https://belongielab.org/">Belongie Lab</a>).
+      I build generative systems for visual content using <strong>diffusion models</strong>,
+      and <strong>LLM Agents</strong> for controllable image
+      generation and editing, instruction-driven understanding, and agentic visual reasoning, at the
+      intersection of computer vision and graphics.
+    </p>
+    <ul class="info">
+      <li>2026 &mdash; Research Scientist Intern at <strong>Adobe</strong>, Paris</li>
+      <li>2023 &mdash; Research Intern at <strong>Aptiv</strong>
+      <li>2022 &mdash; Research Intern at the <strong>Swedish Maritime Robotics Centre</strong> </li>
+    </ul>
+    Outside work I enjoy <a href="https://marcoschouten.portfoliobox.net/">sketching and drawing</a>.
 
-  <h2>Publications</h2>
+    <h2>Publications</h2>
 
-  <table class="papers">
-    <tr>
-      <td class="paper-img"><img src="images/hidden_objects.png" alt="HiddenObjects"></td>
-      <td>
-        <span class="paper-title">HiddenObjects: Diffusion-Distilled Dense Spatial Priors for Object Placement</span>
-        <span class="paper-authors"><strong class="me">Marco Schouten</strong>, Ioannis Siglidis, Serge Belongie, Dim P.
-          Papadopoulos</span>
-        <span class="paper-venue"><em>Under Review</em>, 2026 — <a
-            href="https://hidden-objects.github.io/">webpage</a></span>
-      </td>
-    </tr>
-    <tr>
-      <td class="paper-img"><img src="images/instruction_guided_mllm.png" alt="Instruction-Guided Editing"></td>
-      <td>
-        <span class="paper-title">Instruction-Guided Precise Image Editing Using Multimodal LLMs</span>
-        <span class="paper-authors"><strong class="me">Marco Schouten</strong>, <a href="https://github.com/monurcan">M.
-            Onurcan Kaya</a>, <a href="https://sergebelongie.github.io/">Serge Belongie</a>, <a
-            href="https://dimipapa.github.io/">Dim P. Papadopoulos</a></span>
-        <span class="paper-venue"><em>CVEU @ CVPR Workshop - SCIA</em>, 2025 — <a
-            href="https://poem.compute.dtu.dk/">webpage</a></span>
-      </td>
-    </tr>
-    <tr>
-      <td class="paper-img"><img src="images/sherlock.png" alt="Sherlock"></td>
-      <td>
-        <span class="paper-title">Sherlock Your Queries: Learning to Ask the Right Questions for Dialogue-Based
-          Retrieval</span>
-        <span class="paper-authors">Dong Yun*, <strong class="me">Marco Schouten</strong>*, Dim P. Papadopoulos <span
-            class="equal-contrib">(* equal contribution)</span></span>
-        <span class="paper-venue"><em>arXiv</em>, 2025 — <a href="https://arxiv.org/pdf/2510.18659">arXiv</a></span>
-      </td>
-    </tr>
-  </table>
+    <ul class="papers">
+      <li>
+        <img src="images/hidden_objects.png" alt="HiddenObjects">
+        <div>
+          <span class="title">HiddenObjects: Diffusion-Distilled Dense Spatial Priors for Object Placement</span>
+          <span class="authors"><strong>Marco Schouten</strong>, Ioannis Siglidis, Serge Belongie, Dim P.
+            Papadopoulos</span>
+          <span class="venue"><em>Under Review</em>, 2026 &mdash; <a
+              href="https://hidden-objects.github.io/">webpage</a></span>
+        </div>
+      </li>
+      <li>
+        <img src="images/instruction_guided_mllm.png" alt="Instruction-Guided Image Editing">
+        <div>
+          <span class="title">Instruction-Guided Precise Image Editing Using Multimodal LLMs</span>
+          <span class="authors"><strong>Marco Schouten</strong>, <a href="https://github.com/monurcan">M. Onurcan
+              Kaya</a>, <a href="https://sergebelongie.github.io/">Serge Belongie</a>,
+            <a href="https://dimipapa.github.io/">Dim P. Papadopoulos</a></span>
+          <span class="venue"><em>CVEU @ CVPR Workshop - SCIA</em>, 2025 &mdash; <a
+              href="https://poem.compute.dtu.dk/">webpage</a></span>
+        </div>
+      </li>
+      <li>
+        <img src="images/sherlock.png" alt="Sherlock">
+        <div>
+          <span class="title">Sherlock Your Queries: Learning to Ask the Right Questions for Dialogue-Based
+            Retrieval</span>
+          <span class="authors">Dong Yun*, <strong>Marco Schouten</strong>*, Dim P. Papadopoulos (* equal
+            contribution)</span>
+          <span class="venue"><em>arXiv</em>, 2025 &mdash; <a href="https://arxiv.org/pdf/2510.18659">arXiv</a></span>
+        </div>
+      </li>
+    </ul>
 
+    <h2>Service &amp; Honors</h2>
 
-
-  <h2>Service &amp; Honors</h2>
-
-  <p class="honors">
-    Reviewer, IJCV (2026) ·
-    Selected, ICVSS (2025) ·
-    Hattrick Award, KTH (2020) ·
-    Selected, LeadTheFuture (2020) ·
-    Scholarship, University of Genoa (2018–2020)
-  </p>
-
+    <p>
+      Reviewer, IJCV (2026) &middot;
+      Selected, ICVSS (2025) &middot;
+      Hattrick Award, KTH (2020) &middot;
+      Selected, LeadTheFuture (2020) &middot;
+      Scholarship, University of Genoa (2018&ndash;2020)
+    </p>
+  </main>
 
 </body>
 
