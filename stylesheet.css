@@ -163,6 +163,16 @@ em {
   margin-top: 0.2rem;
 }
 
+/* Personal sign-off */
+.note {
+  margin-top: 2.5rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
