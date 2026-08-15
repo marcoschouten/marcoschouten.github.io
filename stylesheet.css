@@ -12,14 +12,23 @@
 }
 
 body {
-  font-family: "Source Code Pro", ui-monospace, Menlo, Consolas, monospace;
-  font-size: 15px;
-  line-height: 1.55;
+  font-family: "Source Sans 3", -apple-system, "Segoe UI", sans-serif;
+  font-size: 16.5px;
+  line-height: 1.6;
   color: var(--fg);
   background: var(--bg);
   max-width: 720px;
   margin: 0 auto;
   padding: 3rem 1.5rem 4rem;
+}
+
+/* Mono accents — the techy wink */
+.mono,
+h2,
+.role,
+.links,
+.papers .venue {
+  font-family: "Source Code Pro", ui-monospace, Menlo, Consolas, monospace;
 }
 
 /* Left-aligned header */
