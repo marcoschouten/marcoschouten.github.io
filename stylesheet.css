@@ -68,6 +68,15 @@ a:focus {
   margin-top: 1em;
 }
 
+/* Highlighted job-market note */
+.job-note {
+  background: #eaf1fb;
+  border-left: 4px solid #2a5db0;
+  border-radius: 4px;
+  padding: 0.6em 0.9em;
+  margin: 1em 0;
+}
+
 /* Thin section dividers */
 hr {
   height: 0;
