@@ -1,205 +1,63 @@
-/* Look and feel based on shutongjin.github.io (fh5co "boxed" academic page) */
-
-* {
-  box-sizing: border-box;
-}
-
 body {
-  font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #0c0c0c;
-  background: #f9f6f3;
-  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 800px;
+  margin: 24px auto;
+  padding: 0 12px;
 }
 
-/* White boxed page on the warm off-white background */
-#page {
-  max-width: 1000px;
-  margin: 0 auto;
-  background: #fff;
-  min-height: 100vh;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 3em 2em 4em;
+.avatar {
+  width: 180px;
 }
 
-a {
-  color: #2a5db0;
-  text-decoration: none;
+.edu-logo {
+  width: 64px;
+  padding-right: 16px;
 }
 
-a:hover,
-a:focus {
-  text-decoration: underline;
+.edu-logo img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
 }
 
-/* Intro: two columns — text left, square photo right (Jon Barron style) */
 .intro {
   display: flex;
-  gap: 2.5em;
   align-items: flex-start;
+  gap: 24px;
 }
 
 .intro-text {
   flex: 1;
+  min-width: 0;
 }
 
 .intro-photo {
-  flex-shrink: 0;
+  flex: 0 0 180px;
 }
 
-.intro .avatar {
-  width: 200px;
-  display: block;
-  margin-top: 0.3em;
-}
-
-.intro .name {
-  font-size: 1.8em;
-  font-weight: bold;
-  margin: 0 0 0.5em;
-}
-
-.intro-links {
-  margin-top: 1em;
-}
-
-/* Highlighted job-market note */
-.job-note {
-  background: #eaf1fb;
-  border-left: 4px solid #2a5db0;
-  border-radius: 4px;
-  padding: 0.6em 0.9em;
-  margin: 1em 0;
-}
-
-/* Thin section dividers */
-hr {
-  height: 0;
-  border: none;
-  border-top: 1px solid #d9d9d9;
-  margin: 1.8em 0;
-}
-
-/* Section headings */
-h3 {
-  text-align: left;
-  font-size: 1.4em;
-  font-weight: bold;
-  margin: 0 0 0.6em;
-}
-
-p {
-  margin: 0 0 0.8em;
-}
-
-ul {
-  margin: 0 0 0.8em;
-  padding-left: 1.4em;
-}
-
-li {
-  margin-left: 10px;
-  margin-bottom: 0.25em;
-}
-
-/* Publications table: bordered thumbnails left, details right */
-.pubtable {
-  font-size: 16px;
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.pubtable td {
-  border: 0;
-  padding: 12px 0;
-  vertical-align: middle;
-  text-align: justify;
-}
-
-.pubtable .pub-thumb {
-  width: 194px;
-}
-
-.pubtable .pub-thumb img {
-  width: 174px;
-  margin-right: 10px;
-  display: block;
-}
-
-.pubtable p {
-  margin: 0 0 0.4em;
-}
-
-/* Education table: logo left, degree details right */
-.imgtable {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 10px;
-}
-
-.imgtable td {
-  border: 0;
-  padding: 4px 0;
-  vertical-align: middle;
-  text-align: left;
-}
-
-.imgtable .edu-logo {
-  width: 120px;
-}
-
-.imgtable .edu-logo img {
-  width: 100px;
-  height: 95px;
-  object-fit: contain;
-  display: block;
-}
-
-.imgtable ul {
-  margin-bottom: 0;
-}
-
-.img-bordered {
-  border: 5px solid #fff;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-  .container {
-    padding: 2em 1.2em 3em;
-  }
-
+@media (max-width: 480px) {
   .intro {
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 1em;
+    gap: 12px;
   }
 
-  .intro .avatar {
-    width: 55%;
-    margin: 0 auto;
+  .intro-photo {
+    flex-basis: 100px;
   }
+}
 
-  .pubtable,
-  .pubtable tr,
-  .pubtable td {
-    display: block;
-    width: 100%;
-  }
+.pub-thumb {
+  padding-right: 24px;
+}
 
-  .pubtable .pub-thumb {
-    width: 100%;
-    padding-bottom: 0;
-  }
-
-  .pubtable .pub-thumb img {
-    width: 60%;
-    max-width: 260px;
-  }
+.pub-thumb img {
+  display: block;
+  width: 174px;
+  height: 120px;
+  object-fit: contain;
 }
