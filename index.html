@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <title>Marco Schouten</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheet.css">
 </head>
 
@@ -12,33 +15,29 @@
   <div id="page">
     <div class="container">
 
-      <h1>Marco Schouten</h1>
-
       <div class="intro">
         <div class="intro-text">
+          <h1>Marco Schouten</h1>
           <p>
-            Ciao, I am a PhD student in Computer Science at <a href="https://www.dtu.dk/">DTU</a> and a member of
-            the
-            <a href="https://belongielab.org/">Belongie Lab</a>, advised by
+            Ciao, I am a PhD student in Computer Science at <a href="https://www.dtu.dk/">DTU</a>, the
+            <a href="https://p1ai.dk/">Pioneer Centre for AI</a>, and
+            <a href="https://belongielab.org/">Belongie Lab</a>, under the supervision of
             <a href="https://dimipapa.github.io/">Prof Dim Papadopoulos</a> and
             <a href="https://sergebelongie.github.io/">Prof Serge Belongie</a>.
+            I am currently at <a href="https://research.adobe.com/">Adobe Paris</a> as a research scientist intern,
+            working in <a href="https://research.adobe.com/person/tamy-boubekeur/">Prof Tamy Boubekeur</a>'s team.
+            In my free time, I enjoy <a href="https://marcoschouten.portfoliobox.net/">drawing</a>.
           </p>
           <p>
-            Previously, I graduated with my Master's degree at KTH Stockholm and my Bachelor's degree at the University
-            of Genoa. I am currently at Adobe Paris as a research scientist intern, working in <a
-              href="https://research.adobe.com/person/tamy-boubekeur/">Prof Tamy Boubekeur</a>'s team.
+            <!-- Previously, I graduated with my Master's degree at KTH Stockholm and my Bachelor's degree at the University
+            of Genoa. -->
           </p>
-          <p>
-            In my free time, I enjoy <a href="https://marcoschouten.portfoliobox.net/">drawing</a> spending time
-            outdoors, and a good tennis rally.
-          </p>
-          <p class="job-note"><mark style="background-color: #fff9c4;">I am looking for <strong>permanent</strong>
-              industry
-              positions starting in spring 2027.</mark></p>
           <p class="intro-links">
-            <b>[Email]</b> marscho [at] dtu [dot] dk &nbsp;
-            <a href="https://scholar.google.com/citations?user=SdQ_lIIAAAAJ&hl=en">[Google Scholar]</a> &nbsp;
-            <a href="https://github.com/marcoschouten">[GitHub]</a>
+            <a href="mailto:marscho@dtu.dk">Email</a>
+            <span aria-hidden="true">/</span>
+            <a href="https://scholar.google.com/citations?user=SdQ_lIIAAAAJ&hl=en">Google Scholar</a>
+            <span aria-hidden="true">/</span>
+            <a href="https://github.com/marcoschouten">GitHub</a>
           </p>
         </div>
         <div class="intro-photo">
@@ -46,6 +45,7 @@
         </div>
       </div>
 
+      <!--
       <h3>News</h3>
       <ul>
         <li><b>[2026]</b> Research Scientist internship at Adobe Paris</li>
@@ -53,13 +53,24 @@
         <li><b>[2025]</b> Paper accepted at CVEU@CVPR.</li>
         <li><b>[2023]</b> Started my PhD at DTU.</li>
       </ul>
+      -->
 
-      <h3>Research</h3>
-      <p>My work focuses on building controllable LLMs for creating and editing 2D and 3D visual content.</p>
-      </p>
+      <div class="research-intro">
+        <h2>Research</h2>
+        <p>My research focuses on generative AI for 2D/3D visual content creation and editing.</p>
+      </div>
 
-      <h3>Publications</h3>
-      <table class="pubtable" cellspacing="0" cellpadding="0">
+      <table class="pubtable" role="presentation">
+        <tr>
+          <td class="pub-thumb"></td>
+          <td>
+            <p>
+              <b>Agentic Seam Planning for UV Parameterization</b>
+            </p>
+            <p><em>Under Review</em></p>
+          </td>
+        </tr>
+
         <tr>
 
           <td class="pub-thumb">
@@ -83,11 +94,12 @@
           </td>
           <td>
             <p>
-              <b>HiddenObjects: Diffusion-Distilled Dense Spatial Priors for Object Placement</b><br>
-              <a href="https://hidden-objects.github.io/">[Project Page]</a>
+              <a href="https://hidden-objects.github.io/"><b>HiddenObjects: Diffusion-Distilled Dense Spatial Priors for
+                  Object Placement</b></a>
             </p>
             <p><b>Marco Schouten</b>, Ioannis Siglidis, Serge Belongie and Dim P. Papadopoulos</p>
             <p><em>Preprint</em></p>
+            <p><a href="https://hidden-objects.github.io/">project page</a></p>
           </td>
         </tr>
 
@@ -97,11 +109,12 @@
           </td>
           <td>
             <p>
-              <b>Sherlock Your Queries: Learning to Ask the Right Questions for Dialogue-Based Retrieval</b><br>
-              <a href="https://arxiv.org/pdf/2510.18659">[Project Page]</a>
+              <a href="https://arxiv.org/pdf/2510.18659"><b>Sherlock Your Queries: Learning to Ask the Right Questions
+                  for Dialogue-Based Retrieval</b></a>
             </p>
             <p>Dong Yun*, <b>Marco Schouten</b>* and Dim P. Papadopoulos (* equal contribution)</p>
             <p><em>Preprint</em></p>
+            <p><a href="https://arxiv.org/pdf/2510.18659">paper</a></p>
           </td>
         </tr>
 
@@ -112,16 +125,18 @@
           </td>
           <td>
             <p>
-              <b>Instruction-Guided Precise Image Editing Using Multimodal LLMs</b><br>
-              <a href="https://poem.compute.dtu.dk/">[Project Page]</a>
+              <a href="https://poem.compute.dtu.dk/"><b>Instruction-Guided Precise Image Editing Using Multimodal
+                  LLMs</b></a>
             </p>
             <p><b>Marco Schouten</b>, M. Onurcan Kaya, Serge Belongie and Dim P. Papadopoulos</p>
-            <p><em>CVEU Workshop @ CVPR 2025 &mdash; </em></p>
+            <p><em>CVEU Workshop @ CVPR 2025 </em></p>
+            <p><a href="https://poem.compute.dtu.dk/">project page</a></p>
           </td>
         </tr>
       </table>
 
 
+      <!--
       <h3>Education</h3>
       <table class="imgtable">
         <tr>
@@ -162,6 +177,7 @@
           </td>
         </tr>
       </table>
+      -->
     </div>
   </div>
 </body>
