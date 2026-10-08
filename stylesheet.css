@@ -106,14 +106,16 @@ img {
 
 .institution-logos a {
   flex: 0 1 56px;
+  width: 56px;
+  max-width: 56px;
   min-width: 0;
 }
 
 .institution-logos img {
   display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1;
+  width: 56px;
+  height: 56px;
+  max-width: 100%;
   object-fit: contain;
 }
 
