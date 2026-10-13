@@ -147,8 +147,59 @@ img {
   margin-bottom: 0;
 }
 
-.edu-logo img {
+.background-section {
+  padding: 20px;
+}
+
+.background-list {
+  display: grid;
+  gap: 24px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.background-entry {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.background-logo {
+  flex: 0 0 64px;
+}
+
+.background-logo img {
+  display: block;
   width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.background-details {
+  min-width: 0;
+}
+
+.background-details h3 {
+  margin: 0 0 3px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.background-details p {
+  margin: 0 0 3px;
+}
+
+.background-details p:last-child {
+  margin-bottom: 0;
+}
+
+.background-meta {
+  color: #595959;
+}
+
+.background-details .background-description {
+  margin-top: 8px;
 }
 
 @media (max-width: 600px) {
@@ -173,6 +224,20 @@ img {
 }
 
 @media (max-width: 480px) {
+  .background-entry {
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .background-logo {
+    flex-basis: 48px;
+  }
+
+  .background-logo img {
+    width: 48px;
+    height: 48px;
+  }
+
   .pubtable,
   .pubtable tbody,
   .pubtable tr,

@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="stylesheet.css?v=20261008-logos2">
+  <link rel="stylesheet" href="stylesheet.css?v=20261013-background">
 </head>
 
 <body>
@@ -144,48 +144,92 @@
       </table>
 
 
-      <!--
-      <h3>Education</h3>
-      <table class="imgtable">
-        <tr>
-          <td class="edu-logo">
-            <a href="https://www.dtu.dk/"><img src="images/dtu_logo.png" alt="DTU"></a>
-          </td>
-          <td>
-            <b>PhD Candidate:</b> <a href="https://www.dtu.dk/">Technical University of Denmark</a> (Denmark)
-            <ul>
-              <li>Computer Science (2023 ~ Present)</li>
-            </ul>
-          </td>
-        </tr>
-      </table>
-      <table class="imgtable">
-        <tr>
-          <td class="edu-logo">
-            <a href="https://www.kth.se/"><img src="images/kth_logo.png" alt="KTH"></a>
-          </td>
-          <td>
-            <b>Master:</b> <a href="https://www.kth.se/">KTH Royal Institute of Technology</a> (Sweden)
-            <ul>
-              <li>Machine Learning (2022)</li>
-            </ul>
-          </td>
-        </tr>
-      </table>
-      <table class="imgtable">
-        <tr>
-          <td class="edu-logo">
-            <a href="https://unige.it/en"><img src="images/unige_logo.png" alt="University of Genoa"></a>
-          </td>
-          <td>
-            <b>Bachelor:</b> <a href="https://unige.it/en">University of Genoa</a> (Italy)
-            <ul>
-              <li>Computer Science and Engineering (2020)</li>
-            </ul>
-          </td>
-        </tr>
-      </table>
-      -->
+      <section class="background-section" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <ul class="background-list">
+          <li class="background-entry">
+            <a class="background-logo" href="https://www.dtu.dk/">
+              <img src="images/dtu_logo.svg" width="64" height="64" alt="Technical University of Denmark">
+            </a>
+            <div class="background-details">
+              <h3><a href="https://www.dtu.dk/">Technical University of Denmark</a></h3>
+              <p>PhD in Computer Science</p>
+              <p class="background-meta">2023 &ndash; Present &middot; Denmark</p>
+            </div>
+          </li>
+          <li class="background-entry">
+            <a class="background-logo" href="https://www.kth.se/">
+              <img src="images/kth_logo.svg" width="64" height="64" alt="KTH Royal Institute of Technology">
+            </a>
+            <div class="background-details">
+              <h3><a href="https://www.kth.se/">KTH Royal Institute of Technology</a></h3>
+              <p>Master's degree in Machine Learning</p>
+              <p class="background-meta">2022 &middot; Sweden</p>
+            </div>
+          </li>
+          <li class="background-entry">
+            <a class="background-logo" href="https://www.tudelft.nl/">
+              <img src="images/tudelft_logo.svg" width="64" height="64" alt="TU Delft">
+            </a>
+            <div class="background-details">
+              <h3><a href="https://www.tudelft.nl/">TU Delft</a></h3>
+              <p>Master's exchange</p>
+              <p class="background-meta">Netherlands</p>
+            </div>
+          </li>
+          <li class="background-entry">
+            <a class="background-logo" href="https://unige.it/en">
+              <img src="images/unige_logo.svg" width="64" height="64" alt="University of Genoa">
+            </a>
+            <div class="background-details">
+              <h3><a href="https://unige.it/en">University of Genoa</a></h3>
+              <p>Bachelor's degree in Computer Science and Engineering</p>
+              <p class="background-meta">2020 &middot; Italy</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="background-section" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Experience</h2>
+        <ul class="background-list">
+          <li class="background-entry">
+            <a class="background-logo" href="https://research.adobe.com/">
+              <img src="images/adobe_logo.svg" width="64" height="64" alt="Adobe">
+            </a>
+            <div class="background-details">
+              <h3><a href="https://research.adobe.com/">Adobe Research</a></h3>
+              <p>Research Scientist Intern</p>
+              <p class="background-meta">2026 &middot; Paris, France</p>
+              <p class="background-description">Training-free agentic systems for UV unwrapping of 3D meshes in
+                <a href="https://research.adobe.com/person/tamy-boubekeur/">Tamy Boubekeur</a>'s team.</p>
+            </div>
+          </li>
+          <li class="background-entry">
+            <a class="background-logo" href="https://www.aptiv.com/">
+              <img src="images/aptiv_logo.svg" width="64" height="64" alt="Aptiv">
+            </a>
+            <div class="background-details">
+              <h3><a href="https://www.aptiv.com/">Aptiv</a></h3>
+              <p>Research Intern</p>
+              <p class="background-meta">2023 &middot; D&uuml;sseldorf, Germany</p>
+              <p class="background-description">HD map lane-centerline graph generation from radar 3D point clouds.</p>
+            </div>
+          </li>
+          <li class="background-entry">
+            <a class="background-logo" href="https://smarc.se/">
+              <img src="images/smarc_logo.svg" width="64" height="64" alt="Swedish Maritime Robotics Centre">
+            </a>
+            <div class="background-details">
+              <h3><a href="https://smarc.se/">Swedish Maritime Robotics Centre (SMARC)</a></h3>
+              <p>Research Intern</p>
+              <p class="background-meta">2022 &middot; Stockholm, Sweden</p>
+              <p class="background-description">Side-scan sonar SLAM: pose estimation and geometric constraints
+                using nonlinear least-squares optimization.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
     </div>
   </div>
 </body>
