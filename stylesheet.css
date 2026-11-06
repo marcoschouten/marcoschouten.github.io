@@ -262,3 +262,11 @@ img {
     display: none;
   }
 }
+
+.job-market {
+  margin: 0 0 14px;
+  padding: 10px 14px;
+  background: #fff6e8;
+  border-left: 4px solid #f09228;
+  border-radius: 4px;
+}
